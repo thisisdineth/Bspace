@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your School Name</title>
+  <style>
+    body {
+      background-color: #fffae5; /* Light yellow background */
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #logo {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #main-text {
+      text-align: center;
+      margin-top: 20px;
+      color: #333; /* Dark text color */
+    }
+
+    #buttons {
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 0 10px;
+      text-decoration: none;
+      color: #fff; /* White text color */
+      background-color: #4285f4; /* Google blue button color */
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #3367d6; /* Darker blue on hover */
+    }
+
+    /* Floating school supplies */
+    .floating {
+      position: absolute;
+      animation: float 3s infinite;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <img id="logo" src="path/to/your/logo.png" alt="School Logo">
+  <div id="main-text">
+    <p>Welcome to Your School Name</p>
+    <p>Where Learning Never Ends</p>
+  </div>
+  <div id="buttons">
+    <a href="your-page-url" class="button">Visit Page</a>
+    <a href="your-gallery-url" class="button">Visit Gallery Page</a>
+  </div>
+
+  <!-- Floating school supplies -->
+  <img class="floating" src="path/to/pencil.png" alt="Pencil">
+  <img class="floating" src="path/to/books.png" alt="Books">
+  <img class="floating" src="path/to/pen.png" alt="Pen">
+  <img class="floating" src="path/to/rules.png" alt="Rules">
+</body>
+</html>
